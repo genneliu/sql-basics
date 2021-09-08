@@ -32,7 +32,6 @@ SET total = 24
 WHERE invoice_id = 5;
 
 --delete
-
-ALTER TABLE invoice 
-DROP CONSTRAINT invoice_line
+DELETE FROM invoice
 WHERE invoice_id = 1;
+
