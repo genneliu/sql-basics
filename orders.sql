@@ -30,5 +30,4 @@ FROM orders;
 --double check
 --calculate total order price by single person id
 SELECT person_id, product_price*quantity AS total_price
-FROM orders
-GROUP BY person_id;
+FROM orders; 
