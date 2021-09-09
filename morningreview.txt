@@ -5,6 +5,30 @@ Non-Relational - storage model (one of four) that is best suited for the type of
 exa: MongoDB, Apache Cassandra, Redis, Couchbase and Apache HBase
 
 Datatypes: integer, varchar, date, string, null
+Which type to use depends on the data needed to be collected
+
+ CREATE TABLE cool_people (
+  id serial primary key,
+  name VARCHAR(20),
+  age INT,
+  fav_hobby VARCHAR(30),
+  location VARCHAR(30)
+);
 
 
+INSERT INTO cool_people (name, age, fav_hobby, location)
+VALUES ('Gandalf', 2400, 'Wizardry', 'Middle Earth'),
+('Samwise Gamgee', 39, 'Eating', 'The Shire'),
+('Smeagol', 589, 'His Ring', 'Misty Mountains'),
 
+
+SELECT * FROM cool_people 
+WHERE location LIKE 'The Shire';
+
+SELECT * FROM cool_people
+WHERE location IN ('Middle Earth', 'Misty Mountains');
+
+UPDATE cool_people SET name = 'Gollum'
+WHERE name = 'Smeagol';
+
+SELECT * FROM cool_people; 
