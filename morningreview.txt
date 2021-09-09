@@ -1,0 +1,10 @@
+Relational - relational databases store data in rows and columns like a spreadsheet
+exa:  Microsoft SQL Server, Oracle Database, MySQL and IBM DB2
+
+Non-Relational - storage model (one of four) that is best suited for the type of data it's storing.
+exa: MongoDB, Apache Cassandra, Redis, Couchbase and Apache HBase
+
+Datatypes: integer, varchar, date, string, null
+
+
+
