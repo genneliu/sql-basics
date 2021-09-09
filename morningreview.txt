@@ -32,3 +32,11 @@ UPDATE cool_people SET name = 'Gollum'
 WHERE name = 'Smeagol';
 
 SELECT * FROM cool_people; 
+
+UPDATE cool_people SET fav_hobby = 'His Ring'
+WHERE fav_hobby = 'Cannibalism';
+
+
+DROP TABLE cool_person; 
+
+
